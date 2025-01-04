@@ -1,0 +1,106 @@
+import React, { useState } from "react";
+import { Globe2, Menu, X, ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+const Header = () => {
+  const { t, i18n } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "es" : "en";
+    i18n.changeLanguage(newLang);
+  };
+
+  const navigation = [
+    {
+      name: t("header.dayTours"),
+      href: "#",
+      dropdown: [
+        { name: t("header.cityTours"), href: "#" },
+        { name: t("header.natureTours"), href: "#" },
+        { name: t("header.adventureTours"), href: "#" },
+      ],
+    },
+    {
+      name: t("header.packages"),
+      href: "#",
+      dropdown: [
+        { name: t("header.familyPackage"), href: "#" },
+        { name: t("header.honeymoonPackage"), href: "#" },
+        { name: t("header.groupPackage"), href: "#" },
+      ],
+    },
+    {
+      name: t("header.activities"),
+      href: "#",
+      dropdown: [
+        { name: t("header.waterSports"), href: "#" },
+        { name: t("header.mountainClimbing"), href: "#" },
+        { name: t("header.culturalEvents"), href: "#" },
+      ],
+    },
+    { name: t("header.transfers"), href: "#" },
+    { name: t("header.contact"), href: "#" },
+  ];
+
+  return (
+    <header className="fixed top-0 z-50 w-full bg-green-900 shadow-lg">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <div className="flex items-center flex-shrink-0">
+            <h1 className="text-2xl font-bold text-white">
+              {t("header.logo")}
+            </h1>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex lg:space-x-4">
+            {navigation.map((item) => (
+              <div key={item.name} className="relative group">
+                <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-white transition-colors duration-200 rounded-md hover:bg-green-800">
+                  {item.name}
+                  {item.dropdown && <ChevronDown className="w-4 h-4 ml-1" />}
+                </button>
+
+                {item.dropdown && (
+                  <div className="absolute left-0 invisible w-48 mt-2 transition-all duration-200 origin-top-left bg-white rounded-md shadow-lg opacity-0 group-hover:visible ring-1 ring-black ring-opacity-5 group-hover:opacity-100">
+                    <div className="py-1">
+                      {item.dropdown.map((subItem) => (
+                        <a
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          {subItem.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav>
+
+          {/* Right side buttons */}
+          <div className="hidden lg:flex lg:items-center lg:space-x-4">
+            <button
+              onClick={toggleLanguage}
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
+            >
+              <Globe2 className="w-4 h-4 mr-2" />
+              {i18n.language.toUpperCase()}
+            </button>
+
+            <button className="px-4 py-2 text-sm font-medium text-white transition-colors duration-200 bg-orange-500 rounded-md hover:bg-orange-600">
+              {t("header.bookNow")}
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

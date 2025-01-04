@@ -1,0 +1,303 @@
+
+
+{
+"header": {
+    "logo": "Logo",
+    "dayTours": "Day Tours",
+    "packages": "Packages",
+    "activities": "Activities",
+    "transfers": "Transfers",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "cityTours": "City Tours",
+    "natureTours": "Nature Tours",
+    "adventureTours": "Adventure Tours",
+    "familyPackage": "Family Package",
+    "honeymoonPackage": "Honeymoon Package",
+    "groupPackage": "Group Package",
+    "waterSports": "Water Sports",
+    "mountainClimbing": "Mountain Climbing",
+    "culturalEvents": "Cultural Events"
+},
+"hero": {
+    "tagline": "Transform Your Travel Dreams Into Reality",
+    "description": "Curated experiences, luxury accommodations, and unforgettable adventures. Join thousands of satisfied travelers who've discovered their perfect getaway with us.",
+    "cta_start": "Start Your Journey",
+    "cta_video": "Watch Video",
+    "features": {
+      "popular": "Popular This Month",
+      "items": [
+        "100+ Destinations",
+        "Flexible Booking",
+        "5-Star Experience",
+        "Expert Guides"
+      ]
+    },
+    "stats": {
+      "destinations": "Destinations",
+      "tours_completed": "Tours Completed",
+      "happy_clients": "Happy Clients",
+      "years_experience": "Years Experience"
+    }
+  },
+"services_portfolio": {
+    "section_title": "Our Services",
+    "section_description": "Discover our carefully curated selection of tours and experiences",
+    "services": [
+      {
+        "title": "City Day Tour",
+        "description": "Explore the heart of the city in a day with expert local guides. Visit iconic landmarks and hidden gems.",
+        "category": "Day Tours",
+        "img": "City Day Tour.jpg"
+
+      },
+      {
+        "title": "Tropical Paradise Package",
+        "description": "Enjoy 5 days of serenity and adventure in paradise. Perfect blend of relaxation and excitement.",
+        "category": "Packages",
+         "img": "Tropical Paradise.jpg"
+      },
+      {
+        "title": "Mountain Adventure",
+        "description": "Challenge yourself with thrilling hiking trails and breathtaking mountain views.",
+        "category": "Activities",
+         "img": "Mountain Adventure.jpg"
+      },
+      {
+        "title": "Cultural Experience",
+        "description": "Immerse yourself in local traditions, cuisine, and artisan workshops.",
+        "category": "Day Tours",
+         "img": "Cultural Experience.jpg"
+      },
+      {
+        "title": "Island Hopping",
+        "description": "Discover pristine beaches and marine life across multiple tropical islands.",
+        "category": "Activities",
+         "img": "Island Hopping.jpg"
+      },
+      {
+        "title": "Luxury Getaway",
+        "description": "Week-long premium experience with exclusive accommodations and private tours.",
+        "category": "Packages",
+         "img": "Luxury Getaway.jpg"
+      }
+    ],
+    "learn_more": "Learn More"
+  },
+"bookingSystem": {
+    "hero": {
+    "title": "Discover Extraordinary Travel Experiences",
+    "description": "From historic city tours to thrilling adventures, find and book unforgettable activities led by local experts."
+    },
+    "form": {
+    "labels": {
+        "destination": "Where would you like to go?",
+        "dates": "When are you traveling?",
+        "type": "What interests you?",
+        "guests": "Number of travelers"
+    },
+    "placeholders": {
+        "destination": "e.g. Rome, Paris, Tokyo",
+        "dates": "Select dates"
+    },
+    "typeOptions": {
+        "all": "All Experiences",
+        "cultural": "Cultural Tours & Local Life",
+        "adventure": "Adventure & Outdoor",
+        "food": "Food & Wine Experiences",
+        "luxury": "Luxury & Premium Tours"
+    },
+    "guestsOptions": {
+        "singular": "Person",
+        "plural": "People"
+    },
+    "filtersButton": {
+        "show": "Show more filters",
+        "hide": "Hide more filters"
+    },
+    "searchButton": {
+        "idle": {
+        "label": "Find Experiences",
+        "iconAlt": "Search"
+        },
+        "loading": {
+        "label": "Searching...",
+        "iconAlt": "Loader"
+        }
+    }
+    },
+    "featuredExperiences": {
+    "title": "Popular Experiences",
+    "properties": {
+        "type": "type",
+        "duration": "duration"
+    },
+    "actions": {
+        "viewDetails": "View Details"
+    }
+    },
+    "popularDestinations": {
+    "title": "Trending Destinations"
+    },
+    "bokunWidget": {
+    "title": "Bokun Booking Widget",
+    "description": "This is where the Bokun iframe or API integration would be implemented"
+    }
+},
+"testimonials": {
+  "sectionTitle": "What Our Travelers Say",
+  "sectionSubtitle": "Real experiences from real travelers who've explored the world with us",
+  "stats": {
+    "happyTravelers": "10,000+",
+    "averageRating": "4.9/5",
+    "destinations": "50+",
+    "wouldBookAgain": "98%",
+    "labels": {
+      "happyTravelers": "Happy Travelers",
+      "averageRating": "Average Rating",
+      "destinations": "Destinations",
+      "wouldBookAgain": "Would Book Again"
+    }
+  },
+  "buttons": {
+    "previous": "Previous testimonial",
+    "next": "Next testimonial",
+    "verified": "Verified"
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Maria Rodriguez",
+      "location": "Barcelona, Spain",
+      "quote": "Our guide made Rome come alive with stories and hidden gems I never would have discovered on my own. The pasta-making class was a highlight – now I can bring a taste of Italy home!",
+      "tourType": "Cultural Food Tour in Rome",
+      "date": "March 2024"
+    },
+    {
+      "id": 2,
+      "name": "James Wilson",
+      "location": "Sydney, Australia",
+      "quote": "Hiking the Inca Trail to Machu Picchu was life-changing. Our guides were incredibly knowledgeable, and watching the sunrise over the ancient city was breathtaking.",
+      "tourType": "Inca Trail Adventure",
+      "date": "February 2024"
+    },
+    {
+      "id": 3,
+      "name": "Sophie Laurent",
+      "location": "Paris, France",
+      "quote": "The private yacht tour of the Amalfi Coast exceeded all expectations. Swimming in hidden coves, enjoying fresh seafood, and watching the sunset over Positano – pure magic!",
+      "tourType": "Amalfi Coast Luxury Experience",
+      "date": "January 2024"
+    },
+    {
+      "id": 4,
+      "name": "David Chen",
+      "location": "Vancouver, Canada",
+      "quote": "An incredible safari experience in the Serengeti! We saw the Big Five up close, and the luxury camp was amazing. The staff's attention to detail made this trip unforgettable.",
+      "tourType": "Tanzania Safari Adventure",
+      "date": "December 2023"
+    }
+  ]
+  
+},
+"contactSection": {
+  "header": {
+    "title": "Let's Plan Your Next Adventure",
+    "description": "Have questions about our tours? Looking to create a custom itinerary? Our travel experts are here to craft your perfect journey."
+  },
+  "waysToConnect": {
+    "title": "Ways to Connect",
+    "methods": [
+      {
+        "title": "Give us a call",
+        "content": "+1 (555) 123-4567",
+        "subtext": "Mon-Fri from 9am to 6pm EST"
+      },
+      {
+        "title": "Send us an email",
+        "content": "hello@travelcompany.com",
+        "subtext": "We'll respond within 24 hours"
+      },
+      {
+        "title": "Visit our office",
+        "content": "123 Adventure Street",
+        "subtext": "New York, NY 10001"
+      },
+      {
+        "title": "Office hours",
+        "content": "Monday - Friday",
+        "subtext": "9:00 AM - 6:00 PM EST"
+      }
+    ]
+  },
+  "form": {
+    "name": "Your Name *",
+    "email": "Email Address *",
+    "phone": "Phone Number (Optional)",
+    "subject": "Subject",
+    "message": "Your Message *",
+    "subjectOptions": {
+      "default": "Select a topic",
+      "tour": "Tour Inquiry",
+      "custom": "Custom Itinerary",
+      "group": "Group Booking",
+      "other": "Other"
+    },
+    "submit": {
+      "default": "Send Message",
+      "sending": "Sending...",
+      "success": "Message Sent!"
+    },
+    "vacation": "Tell us about your dream vacation...",
+    "successMessage": "Thanks for reaching out! We'll get back to you within 24 hours.",
+    "privacyNote": "By submitting this form, you agree to our privacy policy and terms of service."
+  },
+  "additionalInfo": {
+    "title": "Why Choose Our Travel Experts?",
+    "items": [
+      "Personalized itineraries tailored to your interests and budget",
+      "24/7 support during your journey",
+      "Local expertise and insider access to unique experiences"
+    ]
+  }
+},
+"footer": {
+  "companyName": "TravelPro",
+  "tagline": "Creating unforgettable travel experiences and memories that last a lifetime. Your journey begins with us.",
+  "socialMedia": {
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "links": [
+      "About Us",
+      "Our Services",
+      "Tour Packages",
+      "Travel Guides",
+      "Blog",
+      "Contact Us"
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "123 Travel Street, Tourism City, TC 12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@travelpro.com"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Subscribe to our newsletter for the latest updates and exclusive offers.",
+    "placeholder": "Enter your email",
+    "subscribeButton": "Subscribe"
+  },
+  "bottomBar": {
+    "copyright": "© {year} TravelPro. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  }
+}
+}  
