@@ -62,7 +62,7 @@ const Hero = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col gap-4 sm:flex-row">
-                <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white transition-all duration-200 rounded-lg bg-[#ff7f50] hover:bg-opacity-90 hover:translate-y-[-2px]">
+                <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white transition-all duration-200 rounded-lg bg-orange-600 hover:bg-opacity-90 hover:translate-y-[-2px]">
                   {t("hero.cta_start")}
                   <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" />
                 </button>
