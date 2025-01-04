@@ -49,9 +49,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-green-900 shadow-lg">
+    <header className="fixed top-0 z-50 w-full bg-green-900 py-4 shadow-lg">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18">
+        <div className="flex items-center justify-between ">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <h1 className="text-2xl font-bold text-white">
