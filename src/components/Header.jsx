@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 z-50 w-full bg-green-900 shadow-lg">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <h1 className="text-2xl font-bold text-white">
@@ -117,7 +117,7 @@ const Header = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="lg:hidden">
+          <div className="lg:hidden w-full h-screen" >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item, index) => (
                 <div key={item.name}>
