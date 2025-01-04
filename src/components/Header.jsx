@@ -12,6 +12,10 @@ const Header = () => {
     i18n.changeLanguage(newLang);
   };
 
+  const toggleDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
+
   const navigation = [
     {
       name: t("header.dayTours"),
@@ -63,7 +67,6 @@ const Header = () => {
                   {item.name}
                   {item.dropdown && <ChevronDown className="w-4 h-4 ml-1" />}
                 </button>
-
                 {item.dropdown && (
                   <div className="absolute left-0 invisible w-48 mt-2 transition-all duration-200 origin-top-left bg-white rounded-md shadow-lg opacity-0 group-hover:visible ring-1 ring-black ring-opacity-5 group-hover:opacity-100">
                     <div className="py-1">
@@ -83,7 +86,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side buttons */}
+          {/* Desktop Right side buttons */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <button
               onClick={toggleLanguage}
@@ -92,12 +95,76 @@ const Header = () => {
               <Globe2 className="w-4 h-4 mr-2" />
               {i18n.language.toUpperCase()}
             </button>
-
             <button className="px-4 py-2 text-sm font-medium text-white transition-colors duration-200 bg-orange-500 rounded-md hover:bg-orange-600">
               {t("header.bookNow")}
             </button>
           </div>
+
+          {/* Mobile menu button */}
+          <div className="flex lg:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex items-center justify-center p-2 text-white rounded-md hover:bg-green-800"
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile menu */}
+        {isMenuOpen && (
+          <div className="lg:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navigation.map((item, index) => (
+                <div key={item.name}>
+                  <button
+                    onClick={() => toggleDropdown(index)}
+                    className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-white rounded-md hover:bg-green-800"
+                  >
+                    {item.name}
+                    {item.dropdown && (
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          activeDropdown === index ? "rotate-180" : ""
+                        }`}
+                      />
+                    )}
+                  </button>
+                  {item.dropdown && activeDropdown === index && (
+                    <div className="px-4 py-2 mt-2 space-y-2 bg-green-800 rounded-md">
+                      {item.dropdown.map((subItem) => (
+                        <a
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-green-700"
+                        >
+                          {subItem.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+            {/* Mobile buttons */}
+            <div className="px-4 py-4 border-t border-green-800">
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center justify-center w-full px-4 py-2 mb-2 text-sm font-medium text-gray-700 bg-white rounded-md hover:bg-gray-50"
+              >
+                <Globe2 className="w-4 h-4 mr-2" />
+                {i18n.language.toUpperCase()}
+              </button>
+              <button className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white bg-orange-500 rounded-md hover:bg-orange-600">
+                {t("header.bookNow")}
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
