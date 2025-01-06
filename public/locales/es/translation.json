@@ -44,32 +44,38 @@
       {
         "title": "Tour por la Ciudad",
         "description": "Explore el corazón de la ciudad en un día con guías locales expertos. Visite lugares emblemáticos y joyas ocultas.",
-        "category": "Tours de Día"
+        "category": "Tours de Día",
+         "img": "City Day Tour.jpg"
       },
       {
         "title": "Paquete Paraíso Tropical",
         "description": "Disfrute de 5 días de serenidad y aventura en el paraíso. Mezcla perfecta de relajación y emoción.",
-        "category": "Paquetes"
+        "category": "Paquetes",
+         "img": "Tropical Paradise.jpg"
       },
       {
         "title": "Aventura en la Montaña",
         "description": "Desafíese con emocionantes senderos para caminatas y vistas impresionantes de las montañas.",
-        "category": "Actividades"
+        "category": "Actividades", 
+        "img": "Mountain Adventure.jpg"
       },
       {
         "title": "Experiencia Cultural",
         "description": "Sumérjase en tradiciones locales, cocina y talleres artesanales.",
-        "category": "Tours de Día"
+        "category": "Tours de Día", 
+        "img": "Cultural Experience.jpg"
       },
       {
         "title": "Excursión entre Islas",
         "description": "Descubra playas prístinas y vida marina en múltiples islas tropicales.",
-        "category": "Actividades"
+        "category": "Actividades",
+        "img": "Island Hopping.jpg"
       },
       {
         "title": "Escapada de Lujo",
         "description": "Experiencia premium de una semana con alojamientos exclusivos y tours privados.",
-        "category": "Paquetes"
+        "category": "Paquetes", 
+        "img": "Luxury Getaway.jpg"
       }
     ],
     "learn_more": "Saber Más"
