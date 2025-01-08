@@ -49,7 +49,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-green-900 py-4 shadow-lg">
+    <header className="fixed top-0 z-50 w-full py-4 bg-teal-900 shadow-lg">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between ">
           {/* Logo */}
@@ -63,7 +63,7 @@ const Header = () => {
           <nav className="hidden lg:flex lg:space-x-4">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
-                <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-white transition-colors duration-200 rounded-md hover:bg-green-800">
+                <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-white transition-colors duration-200 rounded-md hover:bg-teal-800">
                   {item.name}
                   {item.dropdown && <ChevronDown className="w-4 h-4 ml-1" />}
                 </button>
@@ -104,7 +104,7 @@ const Header = () => {
           <div className="flex lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 text-white rounded-md hover:bg-green-800"
+              className="inline-flex items-center justify-center p-2 text-white rounded-md hover:bg-teal-800"
             >
               {isMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -117,13 +117,13 @@ const Header = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="lg:hidden w-full h-screen" >
+          <div className="w-full h-screen lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item, index) => (
                 <div key={item.name}>
                   <button
                     onClick={() => toggleDropdown(index)}
-                    className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-white rounded-md hover:bg-green-800"
+                    className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-800"
                   >
                     {item.name}
                     {item.dropdown && (
@@ -135,12 +135,12 @@ const Header = () => {
                     )}
                   </button>
                   {item.dropdown && activeDropdown === index && (
-                    <div className="px-4 py-2 mt-2 space-y-2 bg-green-800 rounded-md">
+                    <div className="px-4 py-2 mt-2 space-y-2 bg-teal-800 rounded-md">
                       {item.dropdown.map((subItem) => (
                         <a
                           key={subItem.name}
                           href={subItem.href}
-                          className="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-green-700"
+                          className="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-700"
                         >
                           {subItem.name}
                         </a>
@@ -151,7 +151,7 @@ const Header = () => {
               ))}
             </div>
             {/* Mobile buttons */}
-            <div className="px-4 py-4 border-t border-green-800">
+            <div className="px-4 py-4 border-t border-teal-800">
               <button
                 onClick={toggleLanguage}
                 className="flex items-center justify-center w-full px-4 py-2 mb-2 text-sm font-medium text-gray-700 bg-white rounded-md hover:bg-gray-50"

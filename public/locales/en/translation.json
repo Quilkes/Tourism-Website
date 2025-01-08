@@ -2,7 +2,7 @@
 
 {
 "header": {
-    "logo": "Logo",
+    "logo": "Quilkes",
     "dayTours": "Day Tours",
     "packages": "Packages",
     "activities": "Activities",
@@ -262,7 +262,7 @@
   }
 },
 "footer": {
-  "companyName": "TravelPro",
+  "companyName": "Quilkes",
   "tagline": "Creating unforgettable travel experiences and memories that last a lifetime. Your journey begins with us.",
   "socialMedia": {
     "facebook": "Facebook",
@@ -294,7 +294,7 @@
     "subscribeButton": "Subscribe"
   },
   "bottomBar": {
-    "copyright": "© {year} TravelPro. All rights reserved.",
+    "copyright": "Design and developed by Quilkes.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy"
