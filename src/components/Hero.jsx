@@ -17,7 +17,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-gray-900">
+    <div className="relative h-[800px]  md:h-[700px] bg-gray-900">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
